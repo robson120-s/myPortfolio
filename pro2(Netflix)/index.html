@@ -11,21 +11,23 @@
 <body>
     <header id="header" class="row clearfix">
         <nav class="navbar navbar-black px-5">
-            <img src="img/images.png" alt="Netflix.logo" class="col-sm-1 round h-50 float-sm-start py-4">
-            <a href="" class="btn btn-light rounded-pill mt-6 px-4 py-1 fs-5 text-black fw-bold">Sign In</a>
+            <img src="img/log.png" alt="Netflix.logo" id="log1" class="col-sm-1 float-sm-start py-4">
+          
+            <img src="img/images.png" alt="Netflix.logo" id="log2" class="float-sm-start py-4">  
+            <a href="" class="btn btn-light rounded-pill px-3  text-black ">Sign In</a>
         </nav>
     </header>
-    <main class="container-fluid px-">
+    <main class="container-fluid px-3">
         <div class="front text-center position-relative "> 
             <div id="banner mb-0" >
-                <img src="img/baner.jpg" alt=""class="banner object-fit-cover position-relative  img-fluid py rounded-5 shadow-lg border border-5 border-danger">
-                <div class="position-absolute top-50 start-50 translate-middle mt-0 fw-lg-bold w-100">
-                    <p class=" display-1 ms-3 fs-1 ">Unlimited movies, TV shows, and more</p>
-                    <h5 class="fs-4">Starts at USD 2.99. Cancel anytime.</h4>
-                    <p class="fs-lg-5">Ready to watch? Enter your email to create or restart your membership.</p>
-                    <div class="input ">
-                        <input class="rounded-pill m-sm-5 px-sm-5 py-sm-3 px-lg-5 py-lg-4 fw-lg-bold fs-lg-3 bg-dark text-light" type="text" placeholder="Email address">
-                        <input class="btn btn-danger rounded-pill fw-bold fs-sm-4 fs-lg-2" type="button" value="Get Started  > ">
+                <img src="img/baner.jpg" alt=""class="banner object-fit-cover position-relative  img-fluid rounded-5  border border-2 border-danger ">
+                <div id="moto" class="position-absolute top-50 start-50 translate-middle mt-0 fw-md-bold w-100">
+                    <p id="moto" class=" display-1 ms-3  fw-bold">Unlimited movies, TV shows, and more</p>
+                    <h5 id="moto" class="">Starts at USD 2.99. Cancel anytime.</h4>
+                    <p id="moto" class="">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="input " >
+                        <input id="emailbox" class="rounded-pill m-sm-5 px-sm-5 py-sm-3 px-lg-5 py-lg-4 fw-lg-bold fs-lg-3 " type="text" placeholder="Email address">
+                        <input id="moto" class=" getstarted btn btn-danger rounded-pill fw-bold py-0 " type="button" value="Get Started  > ">
                     </div>
                 </div>
             </div>
@@ -33,13 +35,14 @@
         <div class="second   mb-3 text-light" >
             <div class="" >
                 <h4 class="fw-bold fs-2 py-4 px-3 " >Trending Now</h4>
-                <div class="row mx-auto d-block" >
-                    <a href=""><img src="img/dw.jpg" class="col-lg-2 col-sm-2 rounded-4" alt=""></a>
-                    <a href=""><img src="img/i1.jpg" class="col-lg-2 col-sm-2 rounded-4" alt=""></a>
-                    <a href=""><img src="img/i2.jpg" class="col-lg-2 col-sm-2 rounded" alt=""></a> 
-                    <a href=""><img src="img/i3.jpg" class="col-lg-2 col-sm-2 rounded-4" alt=""></a>
-                    <a href=""><img src="img/i4.jpg" class="col-lg-2 col-sm-2 rounded-4" alt=""></a>
-                    <a href=""><img src="img/i5.jpg" class="col-lg-2 col-sm-2 rounded-4" alt=""></a>
+                <div class="slide"></div>
+                <div class=" mx-auto" id="trending" >
+                    <a href=""><img src="img/dw.jpg" class="rounded-4" alt=""></a>
+                    <a href=""><img src="img/i1.jpg" class="rounded-4" alt=""></a>
+                    <a href=""><img src="img/i2.jpg" class="rounded" alt=""></a> 
+                    <a href=""><img src="img/i3.jpg" class="rounded-4" alt=""></a>
+                    <a href=""><img src="img/i4.jpg" class="rounded-4" alt=""></a>
+                    <a href=""><img src="img/i5.jpg" class="rounded-4" alt=""></a>
                     <a href=""><img src="" class="col-3 rounded-4" alt=""></a>
                     <a href=""><img src="" alt=""></a>
                     <a href=""><img src="" alt=""></a>
@@ -47,67 +50,87 @@
             </div>
         </div>
         <div class="third ">
-            <h4 class="fw-bold fs-1 px-3 pb-4 text-gray">More Reasons To join</h4>
-            <container class="row gap-1">
+            <h4 class="fw-bold fs-1 px-3 pb-4">More Reasons To join</h4>
+            <container class=" container row gap-3">
 
-                <div class="card mr-2 py-4 bg-secondary col-lg-2 col-sm-12 col-md-12">
+                <div id="card" class="card mr-2 py-4 col-lg-2 col-sm-12 col-md-12">
                     <p class=" text-white fw-bold fs-3   ">Enjoy on your TV</p>
                     <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>                                  
                 </div>
                     
-                <div class="card bg-secondary col-lg-3 p-3 col-sm-12 col-md-12">
+                <div id="card" class="card  col-lg-3 p-3 col-sm-12 col-md-12">
                     <p class=" text-white fw-bold fs-3  ">Download your shows to watch offline</p>
                     <p>Save your favorites easily and always have something to watch.</p>
                 </div>
 
-                <div class="card bg-secondary col-lg-3 p-3 col-sm-12 col-md-12">
+                <div id="card" class="card  col-lg-3 p-3 col-sm-12 col-md-12">
                     <p class=" text-white fw-bold fs-3  ">Watch everywhere</p>
                     <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
                 </div>
 
-                <div class="card bg-secondary p-3 col-lg-3 col-sm-12 col-md-12">    
+                <div id="card" class="card  p-3 col-lg-3 col-sm-12 col-md-12">    
                     <p class=" text-white fw-bold fs-3 ">Create profiles for kids</p>
                     <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership</p>
                 </div>
             </container>
         </div>
-        <div class="fourth">
+        <div class="fourth py-5 px-3 ">
             <h4>Frequently Asked Questions</h4>
-            <p>what is Netflix?</p>
-            <p>How much does Netflix cost?</p>
-            <p>Where can I watch?</p>
-            <p>How do I cancel</p>
-            <p>What can I watch on Netflix?</p>
-            <p>Is Netflix good for kids?</p>
+            <p class="one card bg-dark text-white p-3 fs-3">what is Netflix?</p>
+            <p class="jq1 card bg-dark text-white p-3 fs-5">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connnected devices.  <br>
+            You can watch as much as you want, whenever you want without single commercial - all for one low monthly price.</p>
+            <p class=" two card bg-dark text-white p-3 fs-3">How much does Netflix cost?</p>
+            <p class="jq2 card bg-dark text-white p-3 fs-5">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming devices, all for one ficed monthly fee. Plans range from USD 2.99 to USD 9.99 a month. No extra costs, no contacts.</p>
+            <p class="three card bg-dark text-white p-3 fs-3">Where can I watch?</p>
+            <p class="jq3">Watch anywhere, anytime. 
+                Sign in with your Netflix account to each instantly ont the web at netflix.com from your personal computer or any internet-connected devicecs and that offers the Netflix app, including smart Tvs, and smartphones, Tablet,streaming media players and game consoles.           </p>
+            <p class="card bg-dark text-white p-3 fs-3">How do I cancel</p>
+            <p class="">Netflix is flexible. There are no pesky contacts and no commitment. you can easily cancel your account online in to words</p>
+            <p class="card bg-dark text-white p-3 fs-3">What can I watch on Netflix?</p>
+            <p class="">Netflix has an extensive libirary of feature films, documentaries, Tv shows, anime,award-winning Netflix orginal, and more.</p>
+            <p class="card bg-dark text-white p-3 fs-3">Is Netflix good for kids?</p>
+            <p class="">The Netflix kids experiance is included in your membership to give parents control while kids enjoy family-family Tv shows and movies int their own space. <br> Kids profile come with pin-protected parental control that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.</p>
         </div>
         <div class="six text-center">
             <p class=" fs-3">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="input">
-                <input type="text" placeholder="Email address" class="rounded-pill ml-5 pr-3  px-3 py-3 fw-bold fs-4 bg-dark text-light">
-                <input type="button" value="Get Started  > " class="btn btn-danger rounded-pill fw-bold fs-2">
+                <input type="text" placeholder="Email address" id="emailbox" class="rounded-pill fw-bold fs-4 px-4 py-3 my-2">
+                <input type="button" value="Get Started  > "  class="getstarted btn btn-danger rounded-pill fw-bold fs-2">
             </div>
         </div>
     </main>
-    <footer class="text-secondary">
-        <div class="px-4 row">
-            <a class="text-secondary py-4" href="">Questions? Contact us.</a> <br>
-            <a href="">FAQ</a>
-            <a href="">Investor Relations</a>
-            <a href="">Privacy</a>
-            <a href="">Speed Test</a>
-            <a href="">Help Center</a>
-            <a href="">Jobs</a>
-            <a href="">Cookie Preferences</a>
-            <a href="">Legal Notices</a>
-            <a href="">Account</a>
-            <a href="">Ways to Watch</a>
-            <a href="">Corporate Information</a>
-            <a href="">Only on Netflix</a>
-            <a href="">Media Center</a>
-            <a href="">Terms of Use</a>
-            <a href="">Contact Us</a> <br>
+    <footer class="text-secondary fs-5">
+        <div class="px-4 row ">
+            <a class="py-4" href="">Questions? Contact us.</a> <br>
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <a href="">FAQ</a>  <br>
+                <a href="">Investor Relations</a><br>
+                <a href="">Privacy</a><br>
+                <a href="">Speed Test</a><br>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <a href="">Help Center</a> <br>
+                <a href="">Jobs</a><br>
+                <a href="">Cookie Preferences</a><br>
+                <a href="">Legal Notices</a><br>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="">Account</a><br>
+                <a href="">Ways to Watch</a><br>
+                <a href="">Corporate Information</a><br>
+                <a href="">Only on Netflix</a><br>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <a href="">Media Center</a><br>
+                <a href="">Terms of Use</a><br>
+                <a href="">Contact Us</a> <br>
+        </div>
+        <div class="">
+
         </div>
         <p class="px-4 py-4 ">Netflix Ethiopia</p>
     </footer>
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
