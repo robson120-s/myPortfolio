@@ -32,11 +32,12 @@ nav a{
 .getstarted{
     background-color: red;
 }
-#trending {
-    
+
+
+#trending {    
     display:  flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
     overflow-x: auto;
     padding: 10px;
      scroll-behavior: smooth;
@@ -44,23 +45,85 @@ nav a{
 }
 #trending img{
     width:200px;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
+}
+
+
+.trending-number{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+
+    color: white;
 }
 
 #card{
     background-color: rgba(100, 96, 96, 0.7);
     backdrop-filter: blur(20px);
+    width: 200px;
 }
-
+#icon{
+    width:90px;
+    height: inherit;
+}
 
 .jq1{
     display: none;
 }
+.jq2{
+    display: none;
+}
+.jq3{
+    display: none;
 
-
+}
+.jq4{
+    display: none;
+}
+.jq5{
+    display: none;
+}
+.jq6{
+    display:none;
+}
 
 footer a{
     color: rgb(171, 162, 162);
     backdrop-filter: blur(20px);
+}
+
+@media(min-width:1024px) 
+{
+    
+    #signin{
+        padding-right: 200px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #log1{
+        width: 200px;
+        height: 200px;
+        display:flow-root;
+    }
+    
+    #log2{
+        width: 80px;
+        height: 100px;
+        display: none;
+    }
+    #banner img{
+        width:2px
+    }
+    #moto{
+        font-size: 2vw;
+    }
+
+    #trending img{
+        width:auto;
+        height: 500px
+    }
 }
