@@ -16,15 +16,14 @@ body{
     height: 100px;
 }
 
-nav a{
-    /* px,py,mt;bold */
-}
+
 
 #moto{
-    font-size: 4vw;
+    font-size: 3vw;
 }
 #emailbox{
     color: rgb(255, 255, 255);
+    padding-left: 20px;
     background-color: rgba(248, 240, 240, 0.6);
     backdrop-filter: blur(20px);
     
@@ -37,28 +36,24 @@ nav a{
 #trending {    
     display:  flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
     overflow-x: auto;
-    padding: 10px;
+    padding: 5px;
      scroll-behavior: smooth;
     scrollbar-width: none; 
 }
+
 #trending img{
-    width:200px;
-    height: 350px;
+    width: 150px;
+    height: 250px;
     object-fit: cover;
 }
 
-
-.trending-number{
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    font-size: 3rem;
-    font-weight: bold;
-
-    color: white;
+.maincenter{
+    padding: 20px;
 }
+
+
 
 #card{
     background-color: rgba(100, 96, 96, 0.7);
@@ -69,25 +64,20 @@ nav a{
     width:90px;
     height: inherit;
 }
+.question{
+    font-size: 20px;
+    font-weight: bold;
+}
 
-.jq1{
-    display: none;
+.one ,.two, .four, .three, .five, .six{
+    padding: 25px;
+    
 }
-.jq2{
-    display: none;
-}
-.jq3{
-    display: none;
 
-}
-.jq4{
+.jq1, .jq2, .jq3, .jq4, .jq5, .jq6{
     display: none;
-}
-.jq5{
-    display: none;
-}
-.jq6{
-    display:none;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 footer a{
@@ -95,8 +85,25 @@ footer a{
     backdrop-filter: blur(20px);
 }
 
-@media(min-width:1024px) 
+.number{
+    background-attachment: scroll;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+    font-size: 65px;
+    position: relative;
+    left: 35px;
+    text-shadow: rgb(255, 5, 5) 2px 2px 9px;
+    color: #eadfdf;
+    font-weight: 900;
+}
+
+
+
+@media(min-width:1124px) 
 {
+    body{
+        margin-right: 200px;
+        margin-left: 100px;
+    }
     
     #signin{
         padding-right: 200px;
@@ -119,11 +126,29 @@ footer a{
         width:2px
     }
     #moto{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     #trending img{
-        width:auto;
-        height: 500px
+        width:200px;
+        height: 350px;
     }
+    .question{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .maincenter{
+        padding: 60px;
+    }
+
+    .third .container{
+        justify-content: center;
+    }
+    .third .container div{
+        
+        margin: 20px;
+    }
+
+    
 }
