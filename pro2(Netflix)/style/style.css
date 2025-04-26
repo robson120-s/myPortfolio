@@ -69,6 +69,14 @@ body{
     font-weight: bold;
 }
 
+.plus1, .plus2, .plus3, .plus4, .plus5, .plus6{
+    width: 50px;
+
+}
+.close1, .close2,.close3, .close4, .close5, .close6{
+    width: 50px;
+    display: none;
+}
 .one ,.two, .four, .three, .five, .six{
     padding: 25px;
     

@@ -1,5 +1,42 @@
 
 $(document).ready(function(){
+  $('.discription1').click(function(){
+    $('.plus1, .close1').toggle();
+  })
+  
+})
+
+$(document).ready(function(){
+  $('.discription2').click(function(){
+    $('.plus2, .close2').toggle();
+  })
+})
+
+$(document).ready(function(){
+  $('.discription3').click(function(){
+    $('.plus3, .close3').toggle();
+  })
+})
+
+$(document).ready(function(){
+  $('.discription4').click(function(){
+    $('.plus4, .close4').toggle();
+  })
+})
+
+$(document).ready(function(){
+  $('.discription5').click(function(){
+    $('.plus5, .close5').toggle();
+  })
+})
+$(document).ready(function(){
+  $('.discription6').click(function(){
+    $('.plus6, .close6').toggle();
+  })
+})
+
+
+$(document).ready(function(){
   $('.one').click(function(){
     $('.jq1').toggle(600);
     $('.jq2, .jq3, .jq4, .jq5, .jq6').fadeOut(60);

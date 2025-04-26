@@ -1,0 +1,367 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.logo{
+    width: 170px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+}
+.logo1{
+    width:130px;
+    display: block;
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.button_1:hover {
+    background: #333;
+}
+
+
+
+
+/* Header */
+header {
+    background: #35424a;
+    color: #fff;
+    padding: 20px 0;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+nav ul a{
+    font-size: 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+    margin-left:30px ;
+}
+
+header #branding h1 {
+    margin: 0px;
+    font-size: 35px;
+}
+
+header nav {
+    float: right;
+    margin-top: 30px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+header a:hover {
+    color: #91ef05;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+    min-height: 600px;
+    background: url('../img/uu.jpg') no-repeat 0 -50px;
+    text-align: center;
+    color: #121311;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+ 
+#showcase .container h1{
+    font-weight: 900;
+    font-size: 100px;
+    color: #fbff17;
+}
+
+#showcase .container p{
+    color: #fbff17;
+}
+/* Newsletter */
+#newsletter {
+    padding: 25px;
+    color: #fff;
+    background: #35424a;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 10px;
+}
+
+#newsletter input[type="email"] {
+    padding: 8px;
+    height: 58px;
+    width: 250px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Boxes */
+.box-head{
+    text-align: center;
+    font-weight: 800;
+    font-size:60px ;
+}
+.box-head a{
+    text-decoration: none;
+    color: black;
+}
+#boxes {
+    margin-top: 20px;
+    margin-left: 40px;
+    
+}
+
+#boxes .box {
+    float: left;
+    width: 23%;
+    padding: 10px;    
+    text-align: center;
+}
+.box{
+    background-color: #dad8d8;
+    border-radius: 10px;
+    margin-right: 12px;
+}
+#boxes .box img {
+    width: 250px;
+    height: 200px;
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
+    clear: both;
+}
+
+/* About Page */
+#main {
+    padding: 20px 0;
+}
+
+#main .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-col {
+    flex: 60%;
+    padding: 0 30px;
+}
+
+#sidebar {
+    flex: 30%;
+    background: #35424a;
+    color: #fff;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.dark {
+    background: #35424a;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Academics Page */
+.program {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-left: 3px solid #e8491d;
+}
+
+.program h3 {
+    color: #e8491d;
+    margin-bottom: 10px;
+}
+
+/* Admissions Page */
+.process-step {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+}
+
+/* Events Page */
+.event {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.event img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    color: #e8491d;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.calendar li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #555;
+}
+
+.date {
+    display: inline-block;
+    width: 60px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+/* 
+Faculty and Staff */
+
+.img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Student Resourse */
+
+#library{
+    width: 600px;
+}
+
+.resource-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8491d;
+}
+.resource-card {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #35424a;
+}
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Contact Page */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+
+/* 
+
+/* Responsive 
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+} */
