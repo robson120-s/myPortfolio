@@ -9,11 +9,11 @@
     <title>Netflix</title>
 </head>
 <body>
-    <header id="header" class="row clearfix">
+    <header id="header" class="row clearfix px-2">
         <nav class="navbar navbar-black px-5">
-            <img src="img/log.png" alt="Netflix.logo" id="log1" class="col-sm-1 float-sm-start py-4">
+            <img src="img/netflix-large.svg" alt="Netflix.logo" id="log1" class="col-sm-1 float-sm-start py-4">
           
-            <img src="img/images.png" alt="Netflix.logo" id="log2" class="float-sm-start py-4">  
+            <img src="img/netflix-small.svg" alt="Netflix.logo" id="log2" class="float-sm-start py-4">  
             <a href="" id="signin" class="btn btn-light rounded-pill px-3  text-black ">Sign In</a>
         </nav>
     </header>
@@ -23,7 +23,7 @@
                 <img src="img/baner.jpg" alt=""class="banner object-fit-cover position-relative  img-fluid rounded-5  border border-2 border-danger ">
                 <div id="moto" class="position-absolute top-50 start-50 translate-middle mt-0 fw-md-bold w-100">
                     <p id="moto" class=" display-1 ms-3  fw-bold">Unlimited movies, TV shows, and more</p>
-                    <h5 id="moto" class="">Starts at USD 2.99. Cancel anytime.</h4>
+                    <h5 id="moto" class="">Starts at USD 2.99. Cancel anytime.</h5>
                     <p id="moto" class="">Ready to watch? Enter your email to create or restart your membership.</p>
                     <div class="input " >
                         <input id="emailbox" class="rounded-pill py-2 " type="text" placeholder="Email address">
@@ -36,10 +36,9 @@
             <div class="second   mb-3 text-light" >
                 <div class="" >
                     <h4 class="fw-bold fs-1 py-4 px-3 " >Trending Now</h4>
-                    <div class="slide"></div>
                     <div class=" mx-auto" id="trending" >
                         <span class="number">  1 </span>
-                        <a href=""><img src="img/working_man.jpg" class="col-3 rounded-5" alt=""></a>
+                        <a href=""><img src="img/working_man.jpg" class=" rounded-5" alt=""></a>
                         <span class="number">  2 </span>
                         <a href=""><img src="img/chosen_b.jpg" class="rounded-5" alt=""></a>
                         <span class="number">  3 </span>
@@ -89,55 +88,70 @@
                 </button>
               </div>
  -->
-
-
             <div class="third ">
-                <h4 class="fw-bold fs-1 p-4  pb-4">More Reasons To join</h4>
-                <container class=" container   gap-3 ">
-                    <div class="row">
-                    <div class="col-lg-3 card" id="card">
-                        <div  class="  rounded-5 m-2 py-4 ">
-                            <p class=" text-white fw-bold fs-3   ">Cancel or Switch plan anytime</p>
-                            <img src="img/watch.png" id="icon" alt="">                           
+                <h4 class="p-4 fs-2 fw-bold">More Reasons To Join</h4>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="">
+                        <div class="card bg-dark p-3 rounded-4">
+            
+                            <div class="   ">
+                                <p class=" text-white fw-bold fs-3   ">Cancel or Switch plan anytime</p>
+                                <div class="d-flex justify-content-end">
+                                    <img src="img/watch.png" class="" id="icon" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-
-                    
-                    <div class=" card" id="card">    
-                    <div  class=" rounded-5  ">
-                        <p class=" text-white fw-bold fs-3  ">A safe place just for kids</p>
-                        <img src="img/happy.png" id="icon" alt="">
-                    </div>
-                    </div>
-
-                    <div class="col-lg-3 card" id="card">                    
-                    <div  class=" rounded-5 p-3 ">
-                        <p class=" text-white fw-bold fs-3  ">Watch on your favorite device</p>
-                        <img src="img/tv.png" id="icon" alt="">
-                    </div>
-                    </div>
-
-                    <div class="col-lg-3 card" id="card">
-                        <div  class=" rounded-5 ">                     
-                            <p class=" text-white fw-bold fs-3 ">Stories tailored to your taste</p>
-                            <img src="img/movie.png" id="icon" alt="">       
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="">
+                        <div class="card bg-dark p-3 rounded-4">
+                            <div class="   ">
+                                <p class=" text-white fw-bold fs-3  ">A safe place just for kids</p>
+                                <div class="d-flex justify-content-end">
+                                    <img src="img/happy.png" id="icon" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="">
+                        <div class="card bg-dark p-3 rounded-4">
+                            <div class="  ">
+                                <p class=" text-white fw-bold fs-3  ">Watch on your favorite device</p>
+                                <div class="d-flex justify-content-end">
+                                    <img src="img/tv.png" id="icon" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="col-lg-3 col-md-6 col-sm-12" id="">
+                        <div class="card bg-dark rounded-4 p-3 ">
+                            <div class=" ">
+                                <p class=" text-white fw-bold fs-3 ">Stories tailored to your taste</p>
+                                <div class="d-flex justify-content-end">
+                                    <img src="img/movie.png" id="icon" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
                 </div>
-                </container>
             </div>
+            </div>
+              
+            
+
+
             <div class="fourth py-5 px-3 ">
                 <h4 class="question">Frequently Asked Questions</h4>
 
-
-
                 <!-- ONE -->
 
-
-                <div class="card discription1 bg-dark rounded-5  fs-3 m-3">
+                <div class="card discription1 bg-dark rounded-5   m-3">
                     <div class="one d-flex justify-content-between">
-                        <p class="text-white">what is Netflix?</p> 
+                        <p class="t text-white">what is Netflix?</p> 
                          
                         <div class="">
                             <img src="img/plus-large-svgrepo-com.svg" class="plus1"  alt="">
@@ -158,7 +172,7 @@
 
                 <div class="card discription2 bg-dark rounded-5 m-3">
                     <div class="two d-flex justify-content-between">
-                        <p class=" text-white  fs-3">How much does Netflix cost?</p>
+                        <p class="t text-white  ">How much does Netflix cost?</p>
                         <div class="">
                             <img src="img/plus-large-svgrepo-com.svg" class="plus2"  alt="">
                             <img src="img/close-svgrepo-com (1).svg" alt="" class="close2 jq2">
@@ -174,7 +188,7 @@
                 
                 <div class="card discription3 bg-dark rounded-5 m-3">
                     <div class="three d-flex justify-content-between">
-                        <p class="   text-white fs-3 ">Where can I watch?</p>
+                        <p class=" t  text-white  ">Where can I watch?</p>
                         <div class="">
                             <img src="img/plus-large-svgrepo-com.svg" class="plus3"  alt="">
                             <img src="img/close-svgrepo-com (1).svg" alt="" class="close3 jq3">
@@ -190,7 +204,7 @@
 
                 <div class="card discription4 bg-dark rounded-5 m-3">
                     <div class="four d-flex justify-content-between">
-                        <p class="   text-white  fs-3">How do I cancel</p>
+                        <p class="t   text-white  ">How do I cancel</p>
                         <div class="">
                             <img src="img/plus-large-svgrepo-com.svg" class="plus4"  alt="">
                             <img src="img/close-svgrepo-com (1).svg" alt="" class="close4 jq4">
@@ -205,7 +219,7 @@
                 <!-- FIVE -->
                 <div class="card discription5 bg-dark rounded-5  m-3">
                     <div class="five d-flex justify-content-between">
-                        <p class="  text-white  fs-3 ">What can I watch on Netflix?</p>
+                        <p class=" t text-white   ">What can I watch on Netflix?</p>
                         
                         <div class="">
                             <img src="img/plus-large-svgrepo-com.svg" class="plus5"  alt="">
@@ -221,7 +235,7 @@
                 <!-- Six -->
                 <div class="card discription6 rounded-5 bg-dark m-3">
                     <div class="six d-flex justify-content-between">
-                        <p class="   text-white  fs-3 ">Is Netflix good for kids?</p>
+                        <p class=" t  text-white ">Is Netflix good for kids?</p>
                         <div class="">
                             <img src="img/plus-large-svgrepo-com.svg" class="plus6"  alt="">
                             <img src="img/close-svgrepo-com (1).svg" alt="" class="close6 jq6">
@@ -240,9 +254,9 @@
                     <input type="text" placeholder="Email address" id="emailbox" class="rounded-pill fw-bold fs-4 px-4 py-3 my-2">
                     <input type="button" value="Get Started  > "  class="getstarted btn btn-danger rounded-pill fw-bold fs-2">
                 </div>
-            </div></div>
+            </div>
         </main>
-    </div>
+   
     <footer class="text-secondary m-4 fs-5">
         <div class="px-4 row ">
             <a class="py-4" href="">Questions? Contact us.</a> <br>

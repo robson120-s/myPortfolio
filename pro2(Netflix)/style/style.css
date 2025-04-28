@@ -19,7 +19,7 @@ body{
 
 
 #moto{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 #emailbox{
     color: rgb(255, 255, 255);
@@ -36,7 +36,7 @@ body{
 #trending {    
     display:  flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     overflow-x: auto;
     padding: 5px;
      scroll-behavior: smooth;
@@ -44,19 +44,19 @@ body{
 }
 
 #trending img{
-    width: 150px;
-    height: 250px;
+    width: 100px;
+    height: 200px;
     object-fit: cover;
 }
 
 .maincenter{
-    padding: 20px;
+    padding: 10px;
 }
 
 
 
 #card{
-    background-color: rgba(100, 96, 96, 0.7);
+    background-color: rgba(53, 52, 52, 0.7);
     backdrop-filter: blur(20px);
     width: 200px;
 }
@@ -104,7 +104,9 @@ footer a{
     font-weight: 900;
 }
 
-
+.t{
+    font-size: 20px;
+}
 
 @media(min-width:1124px) 
 {
@@ -120,8 +122,8 @@ footer a{
     }
 
     #log1{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         display:flow-root;
     }
     
@@ -134,12 +136,12 @@ footer a{
         width:2px
     }
     #moto{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     #trending img{
-        width:200px;
-        height: 350px;
+        width:250px;
+        height: 450px;
     }
     .question{
         font-size: 25px;
@@ -148,6 +150,10 @@ footer a{
 
     .maincenter{
         padding: 60px;
+    }
+    .t{
+        font-size: 40px;
+        margin-right: 200px;
     }
 
     .third .container{
