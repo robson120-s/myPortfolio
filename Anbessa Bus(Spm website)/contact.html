@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ea2323;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+
+    nav {
+      background-color: #1c2b3a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3e5068;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #4b502d;
+      margin-bottom: 10px;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(115, 32, 32, 0.7);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #2d3e50;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c2b3a;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #f6ff00;
+      color: rgb(51, 0, 0);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>Have questions? Need help? Get in touch below.</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="route.html">Routes</a>
+    <a href="map.html">Route Map</a>
+    <a href="help.html">Help</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Send Us a Message</h2>
+    <form id="contactForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p class="message" id="responseMessage"></p>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Addis Route Support Team. All rights reserved.
+  </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const responseMessage = document.getElementById("responseMessage");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const subject = form.subject.value.trim();
+      const message = form.message.value.trim();
+
+      if (name && email && subject && message) {
+        // Simulate sending (replace with backend API call if available)
+        responseMessage.textContent = "Thanks for your message! We'll get back to you soon.";
+        responseMessage.style.color = "green";
+        form.reset();
+
+        // Optional fallback mailto if you don’t have a backend yet
+        // window.location.href = `mailto:support@addisroute.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+      } else {
+        responseMessage.textContent = "Please fill out all fields.";
+        responseMessage.style.color = "red";
+      }
+    });
+  </script>
+
+</body>
+</html>

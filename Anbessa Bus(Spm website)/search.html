@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Search Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      padding: 20px;
+    }
+.container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #f71212;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    
+    nav {
+      background-color: #1c2b3a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3e5068;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .search-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container input,
+    .search-container select {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .results-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #007BFF;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      background-color: rgb(209, 209, 32);
+      color: #777;
+    }
+  </style>
+</head>
+<body >  
+<!-- class="container" -->
+  <header>
+    <h1>Route Search Page</h1>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="route.html">Routes</a>
+    <a href="map.html">Route Map</a>
+    <a href="help.html">Help</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search route..." onkeyup="filterResults()" />
+    <select id="areaFilter" onchange="filterResults()">
+      <option value="">All Areas</option>
+      <option value="Merkato">Merkato</option>
+      <option value="Bole">Bole</option>
+      <option value="Legehar">Legehar</option>
+      <option value="4 kilo">4 kilo</option>
+      <!-- Add more areas as needed -->
+    </select>
+  </div>
+
+  <div id="results" class="results-container">
+    <!-- Results will go here -->
+  </div>
+
+  <footer>
+    &copy; 2025 City Transport Route Finder
+  </footer>
+
+  <script>
+    const data = [
+      { id: 21, from: "Flidoro", via: "Kolfe Dildy", to: "Merkato", distance: "8.6 Km" },
+      { id: 22, from: "Summit/codominium/", via: "22 Mazoria", to: "Legehar", distance: "12.3 Km" },
+      { id: 23, from: "Lamberet", via: "Afnch Ber", to: "Merkato", distance: "12.4 Km" },
+      { id: 24, from: "Dire Sololia", via: "ASCO", to: "Merkato", distance: "15.9 Km" },
+      { id: 25, from: "Legehar", via: "Gotera", to: "Akaki", distance: "19 Km" },
+      { id: 26, from: "Merkato", via: "Coca Coal", to: "Sebeta", distance: "25.5 Km" },
+      { id: 27, from: "MEXICO", via: "SARBET", to: "GELAN CONDI.", distance: "14.9 Km" },
+      { id: 28, from: "Asko Sansuzi", via: "Mesalemia", to: "Merkato", distance: "11.1 Km" },
+      // Add more entries here
+    ];
+
+    function filterResults() {
+      const searchText = document.getElementById("searchInput").value.toLowerCase();
+      const selectedArea = document.getElementById("areaFilter").value.toLowerCase();
+
+      const resultsContainer = document.getElementById("results");
+      resultsContainer.innerHTML = "";
+
+      const filteredData = data.filter(route => {
+        const matchesText =
+          route.from.toLowerCase().includes(searchText) ||
+          route.via.toLowerCase().includes(searchText) ||
+          route.to.toLowerCase().includes(searchText);
+
+        const matchesArea =
+          !selectedArea ||
+          route.from.toLowerCase().includes(selectedArea) ||
+          route.via.toLowerCase().includes(selectedArea) ||
+          route.to.toLowerCase().includes(selectedArea);
+
+        return matchesText && matchesArea;
+      });
+
+      if (filteredData.length === 0) {
+        resultsContainer.innerHTML = "<p>No matching routes found.</p>";
+        return;
+      }
+
+      filteredData.forEach(route => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <h3>${route.from} → ${route.via} → ${route.to}</h3>
+          <p><strong>Distance:</strong> ${route.distance}</p>
+        `;
+        resultsContainer.appendChild(card);
+      });
+    }
+
+    // Initial load
+    filterResults();
+  </script>
+
+</body>
+</html>

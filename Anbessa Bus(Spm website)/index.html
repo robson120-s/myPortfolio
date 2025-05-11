@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anbessa City Bus - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      color: #150808;
+    }
+
+    header {
+      background-color: #ff0000;
+      color: rgb(238, 255, 0);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+ 
+.logo {
+  height: 130px; /* Adjust as needed */
+}
+
+    nav {
+      background-color: #1c2b3a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3e5068;
+    }
+
+    
+    .search-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container input,
+    .search-container select {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+      border: 1px solid #120c0c;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    h2 {
+      color: #2d3e50;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .info-box {
+      background-color: #e6eef7;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #ccee08;
+      color: rgb(13, 7, 7);
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      header, .card, nav a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <img src="logo.jfif" alt="Anbessa Logo" class="logo">
+    
+    <h1>Welcome to Anbessa City Bus Route Information</h1><p>Your reliable guide to navigating Addis Ababa with confidence</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="route.html">Route</a>
+    <a href="map.html">Route Map</a>
+    <a href="help.html">Help</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+     <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search route..." onkeyup="filterResults()" />
+    <select id="areaFilter" onchange="filterResults()">
+      <option value="">All Areas</option>
+      <option value="Merkato">Merkato</option>
+      <option value="Bole">Bole</option>
+      <option value="Legehar">Legehar</option>
+      <option value="4 kilo">4 kilo</option>
+      <!-- Add more areas as needed -->
+    </select>
+  </div>
+    <section class="card">
+      <h2>About This Platform</h2>
+      <p>This platform helps you plan your journey using the Anbessa City Bus system in Addis Ababa. You can:</p>
+      <ul>
+        <li>🚌 View available bus routes and terminals</li>
+        <li>🔍 Search for specific destinations or route numbers</li>
+        <li>🗺️ Explore an interactive route map</li>
+        <li>📞 Get contact help and support</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Quick Access</h2>
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>🗂 Route List</h3>
+          <p>Browse all current Anbessa City Bus routes with start and end points.</p>
+        </div>
+        <div class="info-box">
+          <h3>🔎 Search Tool</h3>
+          <p>Find a bus route quickly using keywords or station names.</p>
+        </div>
+        <div class="info-box">
+          <h3>📍 Map Integration</h3>
+          <p>Use a Google-powered map to visually explore routes and stops.</p>
+        </div>
+        <div class="info-box">
+          <h3>💬 Need Help?</h3>
+          <p>Check our Help section or Contact us directly for support and FAQs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Our Mission</h2>
+      <p>We aim to make public transportation in Addis Ababa more accessible and easy to understand. Whether you're a daily commuter, a visitor, or someone new to the city, Anbessa Bus Route Info is here to support your journey.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Anbessa City Bus. Developed to serve the public better.</p>
+  </footer>
+
+</body>
+</html>

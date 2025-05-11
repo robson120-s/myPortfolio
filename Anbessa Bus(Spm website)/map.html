@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Route Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #f71212;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    #map {
+      height: 1000px;
+      width: 2000;
+    }
+    nav {
+      background-color: #1c2b3a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #3e5068;
+    }
+
+    #sidebar {
+      width: 30%;
+      height: 100vh;
+      float: left;
+      overflow-y: auto;
+      background: #f4f4f4;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .location {
+      padding: 10px;
+      margin-bottom: 10px;
+      background: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+      border: 1px solid #ccc;
+    }
+
+    .location:hover {
+      background: #e6f0ff;
+    }
+
+    .search-box {
+      margin-bottom: 15px;
+      display: flex;
+    }
+
+    .search-box input {
+      flex: 1;
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      position: absolute;
+      bottom: 5px;
+      width: 25%;
+      font-size: 12px;
+      background-color: #f2ff00;
+      color: #170505;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <h1>Anbessa Buss Route Map</h1>
+    <p>Discover the route you want to see in the map</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+    <a href="route.html">Routes</a>
+    <a href="map.html">Route Map</a>
+    <a href="help.html">Help</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+
+  <div id="sidebar">
+    <h2>Routes</h2>
+    <div class="search-box">
+      <input type="text" id="mapSearch" placeholder="Search location..." onkeyup="filterLocations()">
+    </div>
+    <div id="locationList"></div>
+    <footer>&copy; 2025 Addis Route Viewer</footer>
+  </div>
+
+  <div id="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.2022293518836!2d38.763611414775456!3d9.030100793510897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85b24f1e9ab7%3A0xa7ed2aa6214a3d26!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1715444340156!5m2!1sen!2set"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([9.03, 38.74], 12); // Addis Ababa center
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const routePoints = [
+      { name: "Merkato", coords: [9.0416, 38.7442] },
+      { name: "Legehar", coords: [9.0152, 38.7614] },
+      { name: "4 Kilo", coords: [9.0426, 38.7622] },
+      { name: "Piazza", coords: [9.0380, 38.7586] },
+      { name: "Bole", coords: [8.9987, 38.7878] },
+      { name: "Torhailoch", coords: [9.0100, 38.7100] },
+      { name: "Addisu Gebeya", coords: [9.0700, 38.7350] },
+      { name: "Megenagna", coords: [9.0360, 38.7860] }
+    ];
+
+    const markers = [];
+
+    routePoints.forEach(loc => {
+      const marker = L.marker(loc.coords).addTo(map)
+        .bindPopup(`<strong>${loc.name}</strong>`)
+        .openPopup();
+
+      markers.push({ ...loc, marker });
+
+      const div = document.createElement('div');
+      div.className = 'location';
+      div.innerText = loc.name;
+      div.onclick = () => {
+        map.setView(loc.coords, 15);
+        marker.openPopup();
+      };
+      document.getElementById('locationList').appendChild(div);
+    });
+
+    function filterLocations() {
+      const text = document.getElementById('mapSearch').value.toLowerCase();
+      const list = document.getElementById('locationList');
+      list.innerHTML = '';
+      markers.forEach(loc => {
+        if (loc.name.toLowerCase().includes(text)) {
+          const div = document.createElement('div');
+          div.className = 'location';
+          div.innerText = loc.name;
+          div.onclick = () => {
+            map.setView(loc.coords, 15);
+            loc.marker.openPopup();
+          };
+          list.appendChild(div);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
