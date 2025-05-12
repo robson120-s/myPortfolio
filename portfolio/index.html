@@ -35,6 +35,27 @@
             <path fill="currentColor"
                 d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95" />
         </symbol>
+        <symbol id="github" viewBox="0 0 16 16" fill="currentColor">
+    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 
+             .4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49 
+             -2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+             -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82 
+             .72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07 
+             -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15 
+             -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82 
+             .64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 
+             2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+             1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 
+             1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+             8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+  </symbol>
+
+  <symbol id="telegram" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M21.05 2.72 2.43 9.69c-1.32.48-1.31 1.16-.23 1.48l4.82 1.5 2.23 7.01c.28.87.5 1.2 1.03 1.2.52 0 .75-.24 1.04-.52l2.5-2.44 
+           5.2 3.82c.95.53 1.63.26 1.88-.88l3.42-16.08c.32-1.49-.56-2.02-1.61-1.56zm-3.11 4.14-9.64 8.9-.37 3.4-1.61-5.06 
+           10.63-7.3c.5-.34.96.08.39.49z"/>
+</symbol>
+
         <symbol id="twitter" viewBox="0 0 16 16">
             <path fill="currentColor"
                 d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518a3.3 3.3 0 0 0 1.447-1.817a6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429a3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218a3.2 3.2 0 0 1-.865.115a3 3 0 0 1-.614-.057a3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
@@ -91,7 +112,7 @@
 
     <div class="preloader text-white fs-6 text-uppercase overflow-hidden"></div>
 
-    <div class="search-popup">
+    <!-- <div class="search-popup">
         <div class="search-popup-container">
 
             <form role="search" method="get" class="form-group" action="index.html">
@@ -130,7 +151,7 @@
             </ul>
 
         </div>
-    </div>
+    </div> -->
 
 
     <nav id="header-nav" class="navbar navbar-expand-lg container-fluid bg-white bg-opacity-50 py-4 fixed-top">
@@ -143,18 +164,18 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
+                <!-- <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
                     <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
-                </div>
+                </div> -->
                 <div class="offcanvas-body">
                     <ul class="navbar-nav text-center align-items-center justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="nav-link active pe-lg-5" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link pe-lg-5" href="blog.html">Blog</a>
+                            <a class="nav-link pe-lg-5" href="#testimonial">Quote</a>
                         <!-- </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link pe-lg-5 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -208,13 +229,13 @@
                                 target="_blank" class="text-decoration-underline fw-bold" href="#">Get PRO</a>
                         </li> -->
 
-                        <li class="nav-item search-item mt-2 mt-lg-0 ">
+                        <!-- <li class="nav-item search-item mt-2 mt-lg-0 ">
                             <a href="#" class="search-button">
                                 <svg class="search">
                                     <use xlink:href="#search"></use>
                                 </svg>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -227,7 +248,7 @@
             <div class="row text-start">
                 <div class="col-lg-5">
                     <p class="text-white">
-                        Programmer & Web Designer
+                        Programmer & Web Developer
                     </p>
                     <h2 class="display-1 fw-bold text-success">
                         Hello I'm <span class="text-danger">Robel Shewangizaw</span>
@@ -260,13 +281,13 @@
                         <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="60"
                             data-title=""></div>
                         <h6>Web Development</h6>
-                        <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="55"
+                        <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="75"
                             data-title=""></div>
                         <h6>Adobe Indesign</h6>
-                        <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="65"
+                        <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="50"
                             data-title=""></div>
                         <h6>AICE</h6>
-                        <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="70"
+                        <div class="ab-progress progress-tooltip" data-progress data-tooltip="true" data-value="75"
                             data-title=""></div>
                     </div>
                 </div>
@@ -395,7 +416,7 @@
             </div>
     </section>
 
-    <section id="portfolio" class="padding-medium container-fluid pt-0" data-aos="fade-up">
+    <section id="portfolio" class="padding-medium container-fluid pt-0 bg-light" data-aos="fade-up">
         <div class="text-center">
             <h3 class="display-5 fw-bold">
                 Portfolio
@@ -405,13 +426,13 @@
                     <button class="filter-button px-3 mb-3 active" data-filter="*">
                         All
                     </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".branding">
+                    <button class="filter-button px-3 mb-3" data-filter=".html">
                         HTML/CSS
                     </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".tshirt">
+                    <button class="filter-button px-3 mb-3" data-filter=".bootstrap">
                         Bootstarp
                     </button>
-                    <button class="filter-button px-3 mb-3" data-filter=".package">
+                    <button class="filter-button px-3 mb-3" data-filter=".graphics">
                         Graphics
                     </button>
                     <button class="filter-button px-3 mb-3" data-filter=".poster">
@@ -421,25 +442,15 @@
             </div>
         </div>
         <div class="isotope-container row">
-            <div class="item tshirt col-md-8 p-2">
+            <div class="item html col-md-8 p-5">
                 <div class="project-content position-relative bg-black">
                     <img class="project-img img-fluid" src="img/googlemeet.PNG" alt="img">
-                    <div class="project-description p-8 position-absolute bottom-0 start-0">
+                    <div class="project-description p-5 position-absolute bottom-0 start-0">
                         <h4 class="text-white">Google Meet Clone</h4>
                         <a href="https://firstproject-eight-lyart.vercel.app/" class="text-white text-decoration-underline">See More</a>
                     </div>
                 </div>
-            </div>
-            <div class="item branding col-md-3 p-3">
-                <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="img/googlemeet2.jpg" alt="img">
-                    <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">Moblie Google Meet</h4>
-                        <a href="https://firstproject-eight-lyart.vercel.app/" class="text-white text-decoration-underline">See More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item tshirt col-md-4 p-3">
+            <div class="item bootstrap col-md-10 p-5">
                 <div class="project-content position-relative bg-black">
                     <img class="project-img img-fluid" src="img/netflix0.png" alt="img">
                     <div class="project-description p-5 position-absolute bottom-0 start-0">
@@ -449,12 +460,12 @@
                 </div>
             </div> 
             
-            <div class="item tshirt col-md-4 p-3">
+            <div class="item html col-md-10 p-5">
                 <div class="project-content position-relative bg-black">
-                    <img class="project-img img-fluid" src="img/Netflix1.jpg" alt="img">
+                    <img class="project-img img-fluid" src="img/Anbessa_home.PNG" alt="img">
                     <div class="project-description p-5 position-absolute bottom-0 start-0">
-                        <h4 class="text-white">Netflix Clone(Moblie View)</h4>
-                        <a href="https://netfilix-kappa.vercel.app/" class="text-white text-decoration-underline">Learn More</a>
+                        <h4 class="text-white">Anbessa Bus</h4>
+                        <a href="https://ambessabus.vercel.app/" class="text-white text-decoration-underline">Learn More</a>
                     </div>
                 </div>
             </div> 
@@ -689,29 +700,38 @@
 
             <ul class="d-flex gap-5 list-unstyled justify-content-center my-3">
                 <li>
-                    <a class="nav-link p-0" href="#">
-                        <svg class="accent-color" width="24" height="24">
-                            <use xlink:href="#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
+    <a class="nav-link p-0" href="https://github.com/robson120-s/" target="_blank" aria-label="GitHub">
+        <svg class="accent-color" width="44" height="44">
+            <use xlink:href="#github"></use>
+        </svg>
+    </a>
+</li>
                 <li>
-                    <a class="nav-link p-0" href="#">
-                        <svg class="accent-color" width="24" height="24">
+  <a class="nav-link p-0" href="https://t.me/R013E1" target="_blank" aria-label="Telegram">
+    <svg class="accent-color" width="44" height="44">
+      <use xlink:href="#telegram"></use>
+    </svg>
+  </a>
+</li>
+
+
+                <li>
+                    <a class="nav-link p-0" href="https://www.instagram.com/_robson_.s?igsh=MTcwZnR5bWE4NTFrbg==">
+                        <svg class="accent-color" width="44" height="44">
                             <use xlink:href="#instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
-                    <a class="nav-link p-0" href="#">
-                        <svg class="accent-color" width="24" height="24">
+                    <a class="nav-link p-0" href="https://x.com/Robson186902">
+                        <svg class="accent-color" width="44" height="44">
                             <use xlink:href="#twitter"></use>
                         </svg>
                     </a>
                 </li>
                 <li>
                     <a class="nav-link p-0" href="#">
-                        <svg class="accent-color" width="24" height="24">
+                        <svg class="accent-color" width="44" height="44">
                             <use xlink:href="#pinterest"></use>
                         </svg>
                     </a>
@@ -719,7 +739,7 @@
             </ul>
 
             <div class="text-center mt-5">
-                <a href="shroba391@gmail.com" class="btn btn-outline-dark rounded-pill me-4">
+                <a href="mailto:shroba391@gmail.com" class="btn btn-outline-dark rounded-pill me-4">
                     Contact me
                 </a>
             </div>
