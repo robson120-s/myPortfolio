@@ -5,15 +5,17 @@ import search from './img/search2.svg';
 import cart from './img/cart.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import '../App.css'; 
+
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg nav px-4">
+    <nav className="navbar navbar-expand-lg nav px-4 position-sticky">
       <ul className="navbar-nav w-100 d-flex align-items-center justify-content-between">
         <li className="nav-item">
-          <img src={logo} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo mob" />
         </li>
 
-        <li className="nav-item position-static hover-dropdown">
+        <li className="nmobnav-item position-static hover-dropdown">
           <a className="nav-link" href=" ">Store</a>
           <div className="dropdown-menu w-100 shadow p-4 mega-dropdown">
             <div className="row">
@@ -47,7 +49,7 @@ function Nav() {
         </li>
 
         
-        <li className="nav-item dropdown position-static hover-dropdown">
+        <li className="nmob nav-item dropdown position-static hover-dropdown">
           <a className="nav-link" href=" ">Mac</a>
           <div className="dropdown-menu w-100 shadow p-4 mega-dropdown">
             <div className="row">
@@ -80,7 +82,7 @@ function Nav() {
           </div>
         </li>
         
-        <li className="nav-item dropdown position-static hover-dropdown">
+        <li className="nmob nav-item dropdown position-static hover-dropdown">
           <a className="nav-link" href=" ">iPad</a>
             <div className="dropdown-menu w-100 shadow p-4 mega-dropdown">
             <div className="row">
@@ -114,7 +116,7 @@ function Nav() {
           </div>
           </li>
 
-        <li className="nav-item dropdown  position-static hover-dropdown">
+        <li className="nmob nav-item dropdown  position-static hover-dropdown">
           <a className="nav-link " href=" ">iPhone</a>
           <div className="dropdown-menu w-100 shadow p-4 mega-dropdown">
             <div className="row">
@@ -148,16 +150,16 @@ function Nav() {
             </div>
           </div>
           </li>
-        <li className="nav-item"><a className="nav-link" href=" ">Watch</a></li>
-        <li className="nav-item"><a className="nav-link" href=" ">Vision</a></li>
-        <li className="nav-item"><a className="nav-link" href=" ">AirPods</a></li>
-        <li className="nav-item"><a className="nav-link" href=" ">TV & Home</a></li>
-        <li className="nav-item"><a className="nav-link" href=" ">Entertainment</a></li>
-        <li className="nav-item"><a className="nav-link" href=" ">Accessories</a></li>
-        <li className="nav-item"><a className="nav-link" href=" ">Support</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">Watch</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">Vision</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">AirPods</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">TV & Home</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">Entertainment</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">Accessories</a></li>
+        <li className="nav-item nmob"><a className="nav-link" href=" ">Support</a></li>
 
-        <li className="nav-item"><img src={search} alt="search" className="logo" /></li>
-        <li className="nav-item"><img src={cart} alt="cart" className="logo" /></li>
+        <li className="nav-item"><img src={search} alt="search" className="mob logo" /></li>
+        <li className="nav-item"><img src={cart} alt="cart" className="mob logo" /></li>
       </ul>
     </nav>
   );

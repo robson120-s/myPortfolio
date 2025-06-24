@@ -21,20 +21,22 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 270px;
-  margin-right: 250px;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
   
 }
 
 .nav ul li{
   margin-left: 5px;
   margin-right:25px;
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .nav ul li a{
   text-decoration: none;
   color: rgb(114, 111, 111);
+  font-size: smaller;
 }
 nav{
   background-color: rgba(255, 255, 255, 0.9);
@@ -45,7 +47,7 @@ nav{
   left: 0;
 }
 .row .navdrop{
-  padding-left: 370px;
+  padding-left: 200px;
   padding-right: 390px;
 }
 .banner1{
@@ -195,7 +197,7 @@ nav{
 }
 .footer-links {
   background-color: #f5f5f7;
-  padding: 40px 80px;
+  padding: 40px 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
   font-size: 14px;
   color: #1d1d1f;
@@ -267,25 +269,6 @@ nav{
   margin-top: 10px;
   color: #888;
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-columns {
-    flex-direction: column;
-  }
-
-  .footer-bottom .region {
-    text-align: left;
-    margin-top: 20px;
-  }
-}
-
-
-.logo {
-  height: 20px;
-  cursor: pointer;
-}
-
 .mega-dropdown {
   display: none;
   position: absolute;
@@ -307,45 +290,194 @@ nav{
 
 
 
+/* Responsive Design */
 
 
 
 
 
+@media (max-width: 768px) {
 
-
-
-
-
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* Navigation */
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .nav ul li {
+    margin: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .row .navdrop {
+    padding: 0 10px;
   }
+
+  nav {
+    min-width: 100%;
+  }
+
+  /* Banner 1 */
+  .banner1 {
+    background-image: url(./mine/img/banner1.jpg);
+    padding-top: 10px;
+    padding-bottom: 0px;
+    height: 350px;
+    margin-top: 20px;
+    width: 100%;
+    
+  }
+  
+.banbutton .learnm{
+  font-size: 50px;
 }
+  .banner1 div {
+    position: static;
+    padding: 20px;
+    text-align: center;
+    font-size: 110px;
+  }
+
+  .banner1 div h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .banner1 div p {
+    font-size: 15px;
+  }
+
+  .quote1{
+    margin-top: 190px;
+  }
+  .gradient{
+    background: linear-gradient(to right, red, #2600ffb6, rgb(200, 230, 6));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  }
+  /* Button container */
+  .banbutton {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  /* Second container */
+  .second-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .banner2 {
+    width: 100%;
+    height: 450px;
+    margin: 5px 0;
+  }
+
+  .banner2a div,
+  .banner2b div {
+    font-size: 14px;
+    margin-top: 35px;
+  }
+
+  /* Quote and logo absolute fixes (optional hide or reposition) */
+  
+  .quote2a,
+  .quote3b,
+  .banner2b div + div {
+    position: static;
+    margin-top: 200px;
+    left: 0;
+    
+  }
+  .banner2b div + div{
+  color:rgb(9, 97, 247);
+  position:absolute;
+  top: 800px;
+  left: 100px;  
+}
+  .quote2a{
+    padding-top: 200px;
+  }
+
+  .banner2b div div .logo2b{
+  position:absolute;
+  top:940px;
+  left:148px;
+  }
+  .banner3a div
+  {
+    padding-top: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 95%;
+    font-weight: 200;
+  }
+  .banner3b div{
+    font-size: 90%;
+  }
+  .quote3b{
+    
+  position:absolute;
+  top: 1930px;
+  left:100px;
+
+  }
+
+  /* Footer */
+  .footer-text div .main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom .region {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .nmob,
+  .nmobnav-item,
+  .hover-dropdown {
+    display: none !important;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .logo.mob {
+    width: 24px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    gap: 10px;
+  }
+  .footer-columns {
+    flex-direction: column;
+  }
+
+  .footer-bottom .region {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
