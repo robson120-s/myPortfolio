@@ -88,27 +88,22 @@ function Footer() {
 
     
         <div className="column">
-<div className="column">
-  <h4 className="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Shop and Learn
-  </h4>
-  <ul className="dropdown-menu">
-    <div className="dropdown-content">
-      <li><a href="#" className="dropdown-item">Store</a></li>
-      <li><a href="#" className="dropdown-item">Mac</a></li>
-      <li><a href="#" className="dropdown-item">iPad</a></li>
-      <li><a href="#" className="dropdown-item">iPhone</a></li>
-      <li><a href="#" className="dropdown-item">Watch</a></li>
-      <li><a href="#" className="dropdown-item">Vision</a></li>
-      <li><a href="#" className="dropdown-item">AirPods</a></li>
-      <li><a href="#" className="dropdown-item">TV & Home</a></li>
-      <li><a href="#" className="dropdown-item">AirTag</a></li>
-      <li><a href="#" className="dropdown-item">Accessories</a></li>
-      <li><a href="#" className="dropdown-item">Gift Cards</a></li>
-    </div>
-  </ul>
-</div>
-<hr/>
+          <h4 className=''>Shop and Learn</h4>
+          <ul className=''>
+            <div className=''>
+            <li> <a href=" " className=' '>Store</a></li>
+            <li><a href=" " className='f'>Mac</a></li>
+            <li><a href=" ">iPad</a></li>
+            <li><a href=" ">iPhone</a></li>
+            <li><a href=" ">Watch</a></li>
+            <li><a href=" ">Vision</a></li>
+            <li><a href=" ">AirPods</a></li>
+            <li><a href=" ">TV & Home</a></li>
+            <li><a href=" ">AirTag</a></li>
+            <li><a href=" ">Accessories</a></li>
+            <li><a href=" ">Gift Cards</a></li>
+            </div>
+          </ul>
 
 
 
@@ -120,7 +115,6 @@ function Footer() {
             <li><a href=" ">Apple Cash</a></li>
           </ul>
         </div>
-        <hr/>
 
         
         <div className="column">
@@ -130,7 +124,6 @@ function Footer() {
             <li><a href=" ">Apple Store Account</a></li>
             <li><a href=" ">iCloud.com</a></li>
           </ul>
-          <hr/>
 
           <h4>Entertainment</h4>
           <ul>
@@ -145,7 +138,6 @@ function Footer() {
             <li><a href=" ">App Store</a></li>
           </ul>
         </div>
-        <hr/>
 
         
         <div className="column">
@@ -165,7 +157,6 @@ function Footer() {
             <li><a href=" ">Shopping Help</a></li>
           </ul>
         </div>
-        <hr/>
 
         
         <div className="column">
@@ -174,7 +165,6 @@ function Footer() {
             <li><a href=" ">Apple and Business</a></li>
             <li><a href=" ">Shop for Business</a></li>
           </ul>
-          <hr/>
 
           <h4>For Education</h4>
           <ul>
@@ -182,7 +172,6 @@ function Footer() {
             <li><a href=" ">Shop for K-12</a></li>
             <li><a href=" ">Shop for College</a></li>
           </ul>
-          <hr/>
 
           <h4>For Healthcare</h4>
           <ul>
@@ -191,7 +180,6 @@ function Footer() {
             <li><a href=" ">Health on Apple Watch</a></li>
             <li><a href=" ">Health Records on iPhone and iPad</a></li>
           </ul>
-          <hr/>
 
           <h4>For Government</h4>
           <ul>
@@ -199,7 +187,6 @@ function Footer() {
             <li><a href=" ">Shop for Veterans and Military</a></li>
           </ul>
         </div>
-        <hr/>
 
        
         <div className="column">
@@ -213,7 +200,6 @@ function Footer() {
             <li><a href=" ">Racial Equity and Justice</a></li>
             <li><a href=" ">Supply Chain Innovation</a></li>
           </ul>
-          <hr/>
 
           <h4>About Apple</h4>
           <ul>
@@ -226,7 +212,6 @@ function Footer() {
             <li><a href=" ">Contact Apple</a></li>
           </ul>
         </div>
-        <hr/>
 
       </div>
 
